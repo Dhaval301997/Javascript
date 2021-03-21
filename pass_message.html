@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pass the message</title>
+	<script type="text/javascript">
+	function myFunction(){
+		var msg=document.getElementById("txt").value;
+		console.log(msg);
+		document.getElementById("demo").textContent= msg;
+	}	
+   </script>
+</head>
+<body>
+	<p>Please enter the message you want to pass:</p>
+	<input type="text" name="message" id="txt"><br><br>
+	<button id="b1" onclick="myFunction()">Submit</button>
+	<p>Last message entered:</p>
+	<div id="demo">Hello</div>
+
+</body>
+</html>
